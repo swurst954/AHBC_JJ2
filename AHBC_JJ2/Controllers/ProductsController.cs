@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AHBC_JJ2.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,19 @@ namespace AHBC_JJ2.Controllers
         // GET: Products
         public ActionResult Index()
         {
+         
+            return View();
+
+        }
+
+        public ActionResult Edit(ProductsInputModel model)
+        {
+            if (ModelState.IsValid == true)
+            {
+                // Maybe save this?
+                return RedirectToRoute(new { controller = "Home", action = "Index" });
+            }
+
             return View();
         }
     }

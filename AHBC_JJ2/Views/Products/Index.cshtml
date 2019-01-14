@@ -23,9 +23,9 @@
         <div class="form-group">
             @Html.LabelFor(x => x.Price)
             @Html.TextBoxFor(x => x.Price, new { @class = "form-control", placeholder = "Enter price" })
-            @Html.ValidationMessageFor(x => x.Name, "Please enter a vallid practice", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(x => x.Name, "Please enter a valid price", new { @class = "text-danger" })
         </div>
-        <button type="submit" class="btn-primary" onclick='window.location = "@Url.Action("Index", "Home")";'>Add Product</button>
+        <button type="submit" class="btn-success">Add Product</button>
 
     }
 </div>

@@ -17,6 +17,7 @@ namespace AHBC_JJ2.Models
 
         [Required]
         [MaxLength(50)]
+        [MinLength(1)]
         [DisplayName("Description:  ")]
         public string Description { get; set; }
 
