@@ -24,6 +24,10 @@ namespace AHBC_JJ2.Controllers
                 // Maybe save this?
                 return RedirectToRoute(new { controller = "Home", action = "Index" });
             }
+            else if (ModelState.IsValid == false)
+            {
+                return RedirectToRoute(new { controller = "Products", action = "Index" });
+            }
 
             return View();
         }

@@ -16,6 +16,10 @@ namespace AHBC_JJ2.Models
         public string Name { get; set; }
 
         [Required]
+        [DisplayName("Product Group:  ")]
+        public string Group { get; set; }
+
+        [Required]
         [MaxLength(50)]
         [MinLength(1)]
         [DisplayName("Description:  ")]
